@@ -35,6 +35,7 @@ def main():
     
     # Memuat data dari file CSV
     data = load_data(MSFT_Dataset)
+    st.write(data)
 
     if not data.empty:
         st.subheader("Data Historis Saham")
