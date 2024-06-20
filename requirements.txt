@@ -1,7 +1,4 @@
 pandas==1.4.2
 numpy==1.26.4
-pip==24.0
-streamlit==1.11.0
 scikit-learn==1.5.0
-matplotlib
-pickle
+matplotlib==3.9.0
