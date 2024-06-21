@@ -7,7 +7,7 @@ from datetime import datetime
 
 # Dataset
 def load_data(MSFT_Dataset):
-    data = pd.read_csv(r'C:\\Users\\Stephani G\\Documents\\hani\\college hani\\stupen\\tasks\\Final Project\\MSFT.csv')
+    data = pd.read_csv(r'MSFT.csv')
     return data
 
 # Mempersiapkan data untuk prediksi
