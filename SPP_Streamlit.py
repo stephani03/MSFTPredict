@@ -6,8 +6,9 @@ import streamlit as st
 from datetime import datetime
 
 # Dataset
+MSFT_Dataset = 'MSFT.csv'
 def load_data(MSFT_Dataset):
-    data = pd.read_csv(r'MSFT.csv')
+    data = pd.read_csv(r'data/MSFT.csv')
     return data
 
 # Mempersiapkan data untuk prediksi
@@ -31,10 +32,7 @@ def main():
     st.title("Prediksi Harga Saham MSFT")
     
     # Menentukan path file CSV
-    MSFT_Dataset = 'MSFT.csv'
-    import os
-    file_path = os.path.join(os.getcwd(),MSFT_Dataset)
-    st.write(f"Using file path:{file_path}")
+    MSFT_Dataset = 'data/MSFT.csv'
 
     # Memuat data dari file CSV
     data = load_data(MSFT_Dataset)
