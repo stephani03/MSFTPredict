@@ -32,10 +32,12 @@ def main():
     
     # Menentukan path file CSV
     MSFT_Dataset = 'MSFT.csv'
-    
+    import os
+    file_path = os.path.join(os.getcwd(),MSFT_Dataset)
+    st.write(f"Using file path:{file_path}")
+
     # Memuat data dari file CSV
     data = load_data(MSFT_Dataset)
-    st.write(data)
 
     if not data.empty:
         st.subheader("Data Historis Saham")
